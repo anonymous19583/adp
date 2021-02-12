@@ -1,0 +1,19 @@
+training:
+    batch_size: 100
+    n_epochs: 200
+    ngpu: 1
+    snapshot_freq: 10
+    alpha: 0.5
+    random_start: False
+data:
+    dataset: "FashionMNIST"
+    random_flip: False
+
+    #dataset: "CIFAR10"
+    #random_flip: True
+optim:
+    weight_decay: 0.0
+    optimizer: "Adam"
+    lr: 0.001
+    beta1: 0.9
+    amsgrad: False
